@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 
 
+
 function pageTemplate(props) {
   return (
     <div style={{backgroundImage: `url(${props.backgroundImageUrl})`}} className='templatePageContainer'>

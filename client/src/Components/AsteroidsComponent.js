@@ -14,10 +14,12 @@ const [page,setPage] = useState(1);
 const navigate = useNavigate();
 
 const getData = async () => {
-  const { data } = await axios(`https://api.nasa.gov/neo/rest/v1/neo/browse?page=${page}&size=9&api_key=bCmXvgvUtGHdTPCdbpbBgOLjTY1XP8uOtJjdUDTl`);
+  const { data } = await axios(`https://api.nasa.gov/neo/rest/v1/neo/browse?page=${page}&size=9&api_key=${process.env.REACT_APP_KEY}`);
   setAsteroidData(data);
 };
 
+
+console.log(process.env.REACT_APP_API_KEY)
 useEffect( () => {
   getData();
 },[])
@@ -35,7 +37,7 @@ useEffect( () => {
 
     
     <div className="asteroidPageContainer">
-        <p style={{color:"white"}}>{page}/1468</p>
+        <p className='pageNumberAsteroid' >{page}/1468</p>
 
     <div className='dataContainer'>
         {asteroidData.near_earth_objects?.map((value,key) => {
@@ -46,7 +48,7 @@ useEffect( () => {
         
         <div className='asteroidHeader'>
             <p className='asteroidId' >{value.id}</p>
-            <p className='asteroidHazardIndicator' style={{backgroundColor: value.is_potentially_hazardous_asteroid === true ? "red": "green"}}> {value.is_potentially_hazardous_asteroid === true ? "THREAT" : "NON-THREAT"}</p>
+            <p className='asteroidHazardIndicator' style={{backgroundColor: value.is_potentially_hazardous_asteroid === true ? "rgb(180, 35, 6)": "rgb(4, 67, 4)"}}> {value.is_potentially_hazardous_asteroid === true ? "THREAT" : "NON-THREAT"}</p>
         </div>
         <div className='asteroidContainerData'>
             <p className='asteroidText'>{value.name}</p>

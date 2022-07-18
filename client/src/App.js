@@ -9,7 +9,8 @@ import MarsPage from "./Pages/MarsPage";
 function App() {
   return (
     <div className="App">
-   
+      
+  
       <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="/asteroidPage" element={<AsteroidsPage/>} />

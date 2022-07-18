@@ -6,24 +6,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  
 }
 
+
+
 .pageTemplateInner{
-  width: 60%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
   flex-direction: column;
   text-align: left;
+
 }
 
 .templateTitle{
   color: white;
-  font-size: 130px;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.638);
+  font-size: 52px;
 }
 
 .templateSubtext{
   color: rgba(255, 255, 255, 0.683);
-  font-size: 20px;
+  font-size: 13px;
 }
 
 .templateButton{
@@ -31,7 +36,7 @@
   padding: 10px 40px;
   color: white;
   text-decoration: none;
-  border-radius: 20px;
+
   position: relative;
   top: 40px;
 }
@@ -39,33 +44,48 @@
 /* asteroid Page   */
 
 .asteroidPageContainer{
-  background-image: url("https://wallpapercave.com/wp/wp6717439.jpg");
+  background-image: url("https://10wallpaper.com/wallpaper/1920x1080/1208/aesthetic_dream_space_hd_desktop_wallpaper_16_1920x1080.jpg");
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10vh;
+
+
+  
+  
+}
+
+.pageNumberAsteroid{
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.484);
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .asteroidData{
-  width: 30vh;
+  width: 40vh;
   height:30vh;
-  background-color: rgba(255, 251, 251, 0.101);
-  box-shadow:5px 5px 8px rgba(0, 0, 0, 0.727);
-  color:white;
-  border-radius: 10px;
+  background-color: rgba(190, 187, 187, 0.103);
+  box-shadow:5px 5px 20px rgba(0, 0, 0, 0.809);
+  font-family: 'Roboto Condensed', sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.454);
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  border: 2px solid rgba(241, 241, 241, 0.143);
 }
 
 .dataContainer{
   width: 80%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr ;
   grid-row-gap:20px;
   place-items:  center;
   padding: 20px;
@@ -77,12 +97,16 @@
   align-items: center;
   margin: 10px;
   width: 90%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.59);
 }
 
 .asteroidHazardIndicator{
   padding: 10px 10px 10px 10px;
-  border-radius: 20px;
+  border-radius: 6px;
   box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.707);
+  font-size: 10px;
+  color: rgb(233, 232, 232);
+  font-weight: bold;
 }
 .asteroidContainerData{
   width: 90%;
@@ -92,12 +116,17 @@
 }
 
 .asteroidText{
-  color: rgb(212, 211, 211);
+  color: rgb(205, 203, 203);
+  font-size: 11px;
+  text-shadow: 1px 2px 3px black;
+  font-weight: bold;
 }
 
 .asteroidId{
   color: white;
   font-weight: bold;
+  font-size: 15px;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .paginationAsteroids{
@@ -116,4 +145,153 @@
 .paginationButton:hover{
   color: rgb(172, 168, 168);
 }
+
+.ApiInfoSection{
+  width: 100%;
+  height: 60vh;
+background-color: rgb(18, 18, 18);
+display: flex;
+justify-content: center;
+}
+.ApiInfoSectionInner{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+
+}
+.ApiInfoTitle{
+  color: white;
+  font-size: 40px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.ApiInfoInnerTitle{
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+.apiSection{
+ color: rgb(149, 149, 149);
+
+  
+}
+
+.ApiSubtext{
+  color: rgb(186, 183, 183);
+}
+
+.maintainers,.apiLinks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+  /* Template mobile Styling   */
+
+  .templateTitle{
+    font-size: 80px;
+   
+  }
+  
+  .templateSubtext{
+    font-size: 15px;
+  }
+
+  .pageTemplateInner{
+    width: 60%;
+    height: 60%;
+  
+  }
+
+  .templatePageContainer{
+    height: 140vh;
+  }
+
+
+  /* Asteroid page mobile Styling   */
+  .dataContainer{
+    grid-template-columns: 1fr  1fr ;
+    grid-template-rows: 1fr 1fr;
+    
+  }
+  .asteroidText{
+    font-size: 11px;
+  }
+  
+  .asteroidId{
+      font-size: 10px;
+  }
+
+  .asteroidHazardIndicator{
+    font-size: 10px;
+  }
+  
+
+}
+
+@media only screen and (min-width: 800px) {
+
+  /* Template mobile Styling   */
+
+  .templateTitle{
+    font-size: 120px;
+   
+  }
+  
+  .templateSubtext{
+    font-size: 15px;
+  }
+
+  .pageTemplateInner{
+    width: 70%;
+    height: 90%;
+  
+  }
+
+  .templatePageContainer{
+    height: 140vh;
+  }
+
+
+  /* Asteroid page mobile Styling   */
+  .dataContainer{
+    grid-template-columns: 1fr  1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+  }
+  .asteroidText{
+    font-size: 15px;
+  }
+  
+  .asteroidId{
+      font-size: 12px;
+  }
+
+  .asteroidHazardIndicator{
+    font-size: 15px;
+  }
+
+  .apiSection{
+    color: rgb(149, 149, 149);
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    
+     
+   }
+
+   .asteroidId{
+    font-size: 20px;
+  }
+  
+
+}
+
 
