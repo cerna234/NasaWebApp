@@ -241,6 +241,84 @@ justify-content: center;
 }
 
 
+/*   navBar styling   */
+.navBar{
+  width: 100%;
+  height: 20vh;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content:center;
+}
+
+.NavBarInner{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+
+ 
+
+}
+
+.navSection{
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+
+}
+
+.navSectionLogo{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.navLinks{
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 20px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+
+ 
+}
+
+
+
+.navMenu{
+width: 50%;
+height: 100vh;
+position: fixed;
+left: 0px;
+top: 0px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: rgb(22, 22, 22);
+transition: 1s ease-in-out;
+
+
+}
+
+.DesktopMenu{
+  display: none;
+}
+
+.closeButton{
+  color: white;
+  font-size: 32px;
+  background-color: rgba(0, 0, 255, 0);
+  border: none;
+  position: relative;
+  text-shadow: 2px 3px 5px black;
+  
+}
+
+
+
+
 
 
 
@@ -366,8 +444,40 @@ justify-content: center;
     
     font-size: 18px;
   }
+
+
+
   
   
+  .navMenu{
+   display: none;
+   
+    
+    }
+    .closeButton{
+      display: none;
+    }
+    .DesktopMenu{
+      width: 30%;
+  
+      display: flex;
+      justify-content: space-evenly;
+    
+    }
+
+    .NavBarInner{
+      align-items: center;
+      display: flex;
+      
+    
+    }
+    .navLinks:hover{
+      color: red;
+      border-bottom: 1px solid red;
+    
+      transition: 0.5s ease-in-out;
+      
+    }
 
   
 
