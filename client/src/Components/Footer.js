@@ -1,14 +1,14 @@
 import React from 'react'
-
+import { Link } from "react-router-dom";
 import { FaExternalLinkAlt,FaGithub } from 'react-icons/fa';
-import { SiNasa } from 'react-icons/si';
+
 
 function Footer() {
   return (
     <footer className='Footer'>
         <div className='FooterInner'>
             <div className='Section'>
-                    <p className='Logo'>NASA <span>&#123;</span> API <span>&#125;</span></p>
+                    <Link to="/" className='Logo'>NASA <span>&#123;</span> API <span>&#125;</span></Link>
                 
             </div>
             <div className='Section'>

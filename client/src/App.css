@@ -233,6 +233,7 @@ justify-content: center;
 .Logo{
   color: white;
   font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
 }
 .Logo span{
   color: red;
