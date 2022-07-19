@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { FaExternalLinkAlt,FaGithub } from 'react-icons/fa';
-import { SiNasa } from 'react-icons/si';
+
 
 function Footer() {
   return (

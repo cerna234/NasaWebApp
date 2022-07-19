@@ -5,13 +5,14 @@ import AsteroidComponent from "./Components/AsteroidsComponent";
 import HomePage from "./Pages/HomePage";
 import AsteroidsPage from "./Pages/AsteroidsPage";
 import MarsPage from "./Pages/MarsPage";
+import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 
 function App() {
   return (
     <div className="App">
       
-  
+    <NavBar/>
       <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="/asteroidPage" element={<AsteroidsPage/>} />
