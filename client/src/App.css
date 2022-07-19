@@ -149,7 +149,7 @@
 .ApiInfoSection{
   width: 100%;
   height: 60vh;
-background-color: rgb(18, 18, 18);
+background-color: rgb(255, 255, 255);
 display: flex;
 justify-content: center;
 }
@@ -163,23 +163,26 @@ justify-content: center;
 
 }
 .ApiInfoTitle{
-  color: white;
-  font-size: 40px;
+  color: rgb(19, 19, 19);
+  font-size: 20px;
   font-family: 'Orbitron', sans-serif;
 }
 
 .ApiInfoInnerTitle{
-  color: white;
+  color: rgb(13, 13, 13);
   font-family: 'Orbitron', sans-serif;
 }
 .apiSection{
- color: rgb(149, 149, 149);
+ color: rgb(14, 14, 14);
 
   
 }
 
+
+
 .ApiSubtext{
-  color: rgb(186, 183, 183);
+  color: rgba(1, 1, 1, 0.342);
+  font-size: 14px;
 }
 
 .maintainers,.apiLinks{
@@ -187,6 +190,7 @@ justify-content: center;
   flex-direction: column;
   align-items: center;
   font-family: 'Roboto Condensed', sans-serif;
+  
 }
 
 /* Footer Styling  */
@@ -194,7 +198,7 @@ justify-content: center;
 .Footer{
   width: 100%;
   height: 30vh;
-  background-color: rgb(13, 16, 23);
+  background-color: rgb(15, 15, 15);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -346,7 +350,22 @@ justify-content: center;
   
     
   }
+
+  .ApiInfoSectionInner{
+    width: 50%;
+    
+   
   
+  }
+  .ApiInfoTitle{
+    font-size: 45px;
+    
+  }
+  
+  .ApiSubtext{
+    
+    font-size: 18px;
+  }
   
   
 
