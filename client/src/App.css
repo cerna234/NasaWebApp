@@ -189,6 +189,55 @@ justify-content: center;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* Footer Styling  */
+
+.Footer{
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(13, 16, 23);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.FooterInner{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.Section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.logoContainers{
+  
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Logo{
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+.Logo span{
+  color: red;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+
+
 
 
 @media only screen and (min-width: 600px) {
@@ -290,6 +339,17 @@ justify-content: center;
    .asteroidId{
     font-size: 20px;
   }
+
+
+  .FooterInner{
+    flex-direction: row;
+  
+    
+  }
+  
+  
+  
+
   
 
 }

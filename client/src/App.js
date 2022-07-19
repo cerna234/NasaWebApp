@@ -5,6 +5,7 @@ import AsteroidComponent from "./Components/AsteroidsComponent";
 import HomePage from "./Pages/HomePage";
 import AsteroidsPage from "./Pages/AsteroidsPage";
 import MarsPage from "./Pages/MarsPage";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="/marsPage" element={<MarsPage/>} />
     
       </Routes>
+
+      <Footer/>
     </div>
   );
 }
