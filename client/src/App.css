@@ -321,9 +321,53 @@ transition: 1s ease-in-out;
 
 
 
+/*  MarsPage Styling */
+.MarsPage{
+  width: 100%;
+  height: 100%;
+  padding-top: 30vh;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.MarsDataContainer{
+  width: 90%;
+  height: 100%;
+  background-color: rgb(36, 36, 36);
+  background-size: cover;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.485);
+}
 
+.MarsDataContainer{
+  width: 30vh;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.marsImage{
+  width: 100%;
+  height: 70%;
+  background-size: cover;
+}
+
+.MarsImageData{
+  width: 80%;
+  height: 40%;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.marsDataValue{
+  color: white;
+  font-size: 10px;
+}
 
 @media only screen and (min-width: 600px) {
 
