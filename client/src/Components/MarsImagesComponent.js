@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 
+
 import axios from 'axios'
 
 function MarsImagesComponent() {
@@ -37,11 +38,15 @@ const SubmitName = () => {
     
 
     <div className='form'>
-      <label>NAME</label>
-       <input type="text" placeholder='ROVER NAME ABBREVIATION' onChange={ (event) => {setCameraOption(event.target.value)}}></input>
+        <div>
+        <input type="text" placeholder='ROVER NAME ABBREVIATION' className='marsInput' onChange={ (event) => {setCameraOption(event.target.value)}}></input>
     
 
-        <button onClick={SubmitName} className="buttonForm">SUBMIT</button>
+    <button onClick={SubmitName} className="submitButton">SUBMIT</button>
+
+        </div>
+       
+          <p className='results'>SHOWING RESULTS FOR "{CameraOption}"</p>
 
      </div>
         <div className='dataContainer'>
@@ -64,11 +69,14 @@ const SubmitName = () => {
     
                             </div>
                             <div className='MarsImageData'>
-                                <p className='marsDataValue'>{value.rover.name}</p>
-                                <p className='marsDataValue'>{value.rover.status}</p>
-                                <p className='marsDataValue'>Landing Date: {value.rover.landing_date}</p>
+                                <p className='marsDataValue'><span>ROVER NAME:</span>   {value.rover.name}</p>
+                                <p className='marsDataValue'><span>STATUS:</span>   {value.rover.status}</p>
+                                <p className='marsDataValue'><span>LANDING DATE:</span>   {value.rover.landing_date}</p>
                             </div>
+
+                            
                         </div>
+                        
                     )
 
                 
@@ -76,8 +84,10 @@ const SubmitName = () => {
                 
                 
             })}
+         
 
         </div>
+      
 
        
         

@@ -32,7 +32,7 @@ function NavBar() {
     <nav className='navBar'>
         <div className='NavBarInner'>
             <div className='navSectionLogo'>
-            <p  className='Logo'>NASA <span>&#123;</span> API <span>&#125;</span></p>
+            <Link to="/" className='Logo'> <p  className='Logo'>NASA <span>&#123;</span> API <span>&#125;</span></p></Link>
             </div>
             
 
